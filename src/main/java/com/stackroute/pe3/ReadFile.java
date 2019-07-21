@@ -7,16 +7,17 @@ public class ReadFile {
         String fileName = "temp.txt";
         File f = new File(fileName);
         System.out.println("path " +f);
-        System.out.println("Exist "+f.exists());
-        System.out.println("Is there "+f.isDirectory());
-        System.out.println(f.length());
+
         FileOutputStream fos = new FileOutputStream(f);
         DataOutputStream dos = new DataOutputStream(fos);
-        dos.writeUTF("Demo Content");
+        dos.writeUTF("This is just a demo content in temp.txt file");
 
         FileInputStream fis = new FileInputStream(f);
         DataInputStream dis = new DataInputStream(fis);
-
+        String string = dis.readUTF();
+        System.out.println(string);
+        string=string.toUpperCase();
+        System.out.println(string);
     }
 
 }
