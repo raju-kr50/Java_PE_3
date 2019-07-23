@@ -2,6 +2,7 @@
 //
 //import org.junit.After;
 //import org.junit.Before;
+//import org.junit.Test;
 //
 //import java.io.File;
 //import java.io.FileInputStream;
@@ -22,7 +23,6 @@
 //        this.readFile = null;
 //    }
 //
-//    File f =new File(demo.txt);
-//    FileOutputStream fos = new FileOutputStream()
+//    @Test
 //
 //}
